@@ -1,3 +1,9 @@
+:root {
+  --box-shadow:
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px,
+    rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
 body,
 html {
   margin: 0;
@@ -8,6 +14,8 @@ html {
 body {
   font-family: "Irish Grover", cursive;
   background-color: #c58f60;
+  overflow-x: hidden;
+  height: 100vh;
 }
 /**************************/
 /*       Navigation       */
@@ -68,7 +76,7 @@ button:hover {
 /*      Main            */
 /************************/
 .container {
-  height: 90%;
+  /* height: 100%; */
   width: 100vw;
   background-color: #c58f60;
 }
@@ -105,10 +113,18 @@ button:hover {
 }
 
 .image-header {
+  margin-top: 80px;
+  margin-right: 2rem;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-header img {
   width: 100%;
-  height: 95%;
-  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 11.46%),
-    url(/images/header.jpg);
+  height: 100%;
+  border-radius: 2rem;
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -118,7 +134,9 @@ button:hover {
 /************************/
 .footer {
   height: 85px;
-
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,10 +1,10 @@
 .container {
-  height: 100%;
+  /* height: 100%; */
 }
 
 .swiper {
-  width: 80%;
-  height: 80%;
+  width: 600px;
+  height: auto;
   max-height: 700px;
 }
 
@@ -29,6 +29,6 @@ img {
 
 @media (min-width: 900px) {
   .container {
-    height: 95vh;
+    /* height: 95vh; */
   }
 }

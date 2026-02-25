@@ -21,3 +21,6 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+// Copyright Year
+document.getElementById("year").textContent = new Date().getFullYear();

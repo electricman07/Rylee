@@ -8,14 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Irish+Grover&display=swap" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-/>
+    
+    
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/images.css">
 </head>
@@ -28,7 +22,7 @@
                 <li class="nav-link"><a href="images.html" class="link">Images</a></li>
                 <li class="nav-link"><a href="contact.html" class="link">Contact</a></li>
             </ul>
-            <button href="contact.html">Contact Me</button>
+            <a href="contact.html" aria-label="Link to contact page"><input class="button" type="button" name="button" value="Contact Me!"/></a>
         </div>
     </nav>
     <main class="container">
@@ -77,11 +71,12 @@
             <li class="nav-link-footer"><a href="images.html" class="link">Images</a></li>
             <li class="nav-link-footer"><a href="contact.html" class="link">Contact</a></li>
         </ul>
-        <p class="copyright">@Copyright 2023 - Rylee the beagle</p>
+        <div class="copyright">
+            Copyright &copy; <span id="year"></span>  - Rylee the beagle
+        </div>
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="/js/scripts.js"></script>
+    
+    <script type="module" src="/js/scripts.js"></script>
 </body>
 </html>

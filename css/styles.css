@@ -48,7 +48,7 @@ body {
   color: #d9d9d9;
 }
 
-button {
+.button {
   margin-right: 20px;
   height: 30px;
   width: 150px;
@@ -61,7 +61,7 @@ button {
   margin-bottom: 10px;
 }
 
-button:hover {
+.button:hover {
   background-color: #d9d9d9;
   color: #c58f60;
 }

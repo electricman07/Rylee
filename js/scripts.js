@@ -1,12 +1,12 @@
-import Swiper from "./node_modules/swiper/swiper-bundle.esm.browser.min.js";
+import Swiper from "../node_modules/swiper/swiper-bundle.min.js";
 import {
   Navigation,
   Pagination,
-} from "./node_modules/swiper/modules/index.mjs";
+} from "../node_modules/swiper/modules/index.mjs";
 // import Swiper and modules styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import "../node_modules/swiper/modules";
+import "../node_modules/swiper/modules/navigation.mjs";
+import "../node_modules/swiper/modules/pagination.mjs";
 
 const swiper = new Swiper(".swiper", {
   // Default parameters

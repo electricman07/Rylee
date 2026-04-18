@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Irish+Grover&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     
     
     <link rel="stylesheet" href="./css/styles.css">
@@ -79,6 +79,18 @@
     </footer>
     
     
-    <script type="module" src="./js/scripts.js"></script>
+    <script type="module" src="./js/scripts.js">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+        
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            pagination: { el: '.swiper-pagination' },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        });
+
+        </script>
 </body>
 </html>

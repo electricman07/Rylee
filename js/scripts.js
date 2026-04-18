@@ -1,16 +1,6 @@
-import Swiper from "../node_modules/swiper/swiper-bundle.min.js";
-import {
-  Navigation,
-  Pagination,
-} from "../node_modules/swiper/modules/index.mjs";
-// import Swiper and modules styles
-import "../node_modules/swiper/modules";
-import "../node_modules/swiper/modules/navigation.mjs";
-import "../node_modules/swiper/modules/pagination.mjs";
+import Swiper from "../node_modules/swiper/swiper-bundle.min.mjs";
 
 const swiper = new Swiper(".swiper", {
-  // Default parameters
-  modules: [Navigation, Pagination],
   // Optional parameters
   direction: "horizontal",
   loop: true,
